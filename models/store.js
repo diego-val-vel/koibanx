@@ -5,7 +5,7 @@ const StoreSchema = new mongoose.Schema({
   cuit: String,
   concepts: Array,
   currentBalance: Number,
-  active: Boolean,
+  active: { type: Boolean, default: true },
   lastSale: Date,
 },{ timestamps: true });
 
