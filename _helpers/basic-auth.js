@@ -20,9 +20,6 @@ async function basicAuth(req, res, next) {
         return res.status(401).json({ message: 'Invalid Authentication Credentials' });
     }
 
-    // Attach user to request object.
-    // req.user = user;
-
     next();
 }
 
