@@ -21,7 +21,7 @@ npm start
 
 ## Notes
 
-1. Files of type .env are not in the .gitignore for testing purposes.
+1. Files of type env are not added to gitignore for testing purposes.
 
 ## License
 
