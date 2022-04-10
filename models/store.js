@@ -10,7 +10,7 @@ const StoreSchema = new mongoose.Schema({
 },{ timestamps: true });
 
 StoreSchema.pre('save', async function (callback) {
-  //completar de ser necesario
+  // Completar de ser necesario.
 });
 
 module.exports = mongoose.model('Store', StoreSchema);

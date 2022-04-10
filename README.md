@@ -19,5 +19,10 @@ npm i
 npm start
 ```
 
+## Notes
+
+1. The .env file is not in the .gitignore for testing purposes.
+
 ## License
+
 [Some license](https://choosealicense.com/licenses/mit/)
