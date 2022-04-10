@@ -1,13 +1,22 @@
+const NODE_ENV = process.env.NODE_ENV || 'develop';
+// const NODE_ENV = process.env.NODE_ENV || 'production';
+
+const dotenv = require('dotenv');
+dotenv.config({
+    path: `.env.${NODE_ENV}`
+});
+
+const express = require('express')
+const app = express()
+
 const mongoose = require('mongoose');
 const logger = require('./utils/logger');
 mongoose.Promise = Promise;
 
-const express = require('express')
-const app = express()
-const dotenv = require('dotenv');
-dotenv.config();
 const config = require('config');
+
 mongoose.connect('mongodb://' + config.get('mongodb.address') + '/' + config.get('mongodb.dbname'), { useNewUrlParser: true, useUnifiedTopology: true });
+
 require('./utils/initializer').init()
 
 app.use('/api', require('./routes/stores'));
