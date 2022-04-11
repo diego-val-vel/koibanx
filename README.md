@@ -22,7 +22,5 @@ npm start
 ## Notes
 
 1. Files of type env are not added to gitignore for testing purposes.
-
-## License
-
-[Some license](https://choosealicense.com/licenses/mit/)
+2. In the challenge instructions is mentioned that for authentication the user test@koibanx.com has the password test123, however, in the code the password with which it was created is admin.
+3. The currency that was handled is in MXN.

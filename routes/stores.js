@@ -1,4 +1,5 @@
 const logger = require('../utils/logger');
+const formatter = require('../utils/format-currency');
 const express = require('express');
 const router = express.Router();
 const { check, validationResult } = require('express-validator');
@@ -17,20 +18,36 @@ async function getAllStores(req, res) {
   try {
     // Execute query with page and limit values.
     const stores = await Store.find()
+      .select('_id name cuit concepts currentBalance active lastSale')
       .limit(limit * 1)
       .skip((page - 1) * limit)
+      .sort({createdAt: -1})
       .exec();
 
     // Get total documents in the Store collection.
     const countStores = await Store.countDocuments();
 
+    const selectionStores = stores
+      .map(store => {
+        store.concepts.sort(function(a, b) { return a - b });
+        const concepts = Object.fromEntries(store.concepts.map((concept, i) => ['concepto_' + (i + 1), concept]));
+        const { ['concepts']: removedProperty, ...storeRest } = store.toObject();
+        storeRest.currentBalance = formatter.format(storeRest.currentBalance);
+        storeRest.active = (storeRest.active?'Sí':'No');
+
+        return {
+          ...storeRest,
+          ...concepts
+        };
+      });
+
     // Return response with stores, total pages, and current page.
     res.json({
-      data: stores,
-      page: page,
+      data: selectionStores,
+      page: Math.ceil(page),
       pages: Math.ceil(countStores / limit),
-      limit: limit,
-      total: Math.ceil(countStores / limit) * limit
+      limit: Math.ceil(limit),
+      total: countStores
     });
   } catch (err) {
     console.error(err.message);
