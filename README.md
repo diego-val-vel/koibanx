@@ -39,7 +39,7 @@ curl --location --request POST 'http://localhost:3000/api/store' \
 }'
 ```
 
-* Both endpoints needs the header Authorization Basic *
+3. Both endpoints needs the header Authorization Basic.
 
 - Username: test@koibanx.com
 - Password: admin
