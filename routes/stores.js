@@ -30,7 +30,8 @@ async function getAllStores(req, res) {
     const selectionStores = stores
       .map(store => {
         store.concepts.sort(function(a, b) { return a - b });
-        const concepts = Object.fromEntries(store.concepts.map((concept, i) => ['concepto_' + (i + 1), concept]));
+
+        const concepts = Object.fromEntries(store.concepts.map((concept, i) => [`concepto_${(i + 1)}`, concept]));
         const { ['concepts']: removedProperty, ...storeRest } = store.toObject();
         storeRest.currentBalance = formatter.format(storeRest.currentBalance);
         storeRest.active = (storeRest.active?'Sí':'No');

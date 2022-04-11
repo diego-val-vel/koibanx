@@ -13,7 +13,6 @@ async function basicAuth(req, res, next) {
     const base64Credentials = req.headers.authorization.split(' ')[1];
     const credentials = Buffer.from(base64Credentials, 'base64').toString('ascii');
     const [username, password] = credentials.split(':');
-
     const isValidUser = await userService.authenticate(username, password);
 
     if (!isValidUser || (isValidUser === null)) {

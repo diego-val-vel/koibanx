@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1649650913093" clover="3.2.0">
+  <project timestamp="1649650913093" name="All files">
+    <metrics statements="129" coveredstatements="108" conditionals="36" coveredconditionals="21" methods="18" coveredmethods="14" elements="183" coveredelements="143" complexity="0" loc="129" ncloc="129" packages="7" files="11" classes="11"/>
+    <package name="koibanx-backend-challenge">
+      <metrics statements="22" coveredstatements="22" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
+      <file name="app.js" path="/Users/diego.valencia/Desktop/koibanx-backend-challenge/app.js">
+        <metrics statements="22" coveredstatements="22" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="koibanx-backend-challenge._helpers">
+      <metrics statements="17" coveredstatements="13" conditionals="10" coveredconditionals="7" methods="2" coveredmethods="1"/>
+      <file name="basic-auth.js" path="/Users/diego.valencia/Desktop/koibanx-backend-challenge/_helpers/basic-auth.js">
+        <metrics statements="13" coveredstatements="12" conditionals="8" coveredconditionals="7" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="8" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="18" count="5" type="cond" truecount="3" falsecount="1"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+      <file name="error-handler.js" path="/Users/diego.valencia/Desktop/koibanx-backend-challenge/_helpers/error-handler.js">
+        <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="koibanx-backend-challenge.config">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="default.js" path="/Users/diego.valencia/Desktop/koibanx-backend-challenge/config/default.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="koibanx-backend-challenge.models">
+      <metrics statements="20" coveredstatements="11" conditionals="8" coveredconditionals="0" methods="5" coveredmethods="2"/>
+      <file name="store.js" path="/Users/diego.valencia/Desktop/koibanx-backend-challenge/models/store.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+      <file name="user.js" path="/Users/diego.valencia/Desktop/koibanx-backend-challenge/models/user.js">
+        <metrics statements="16" coveredstatements="7" conditionals="8" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="koibanx-backend-challenge.routes">
+      <metrics statements="45" coveredstatements="43" conditionals="12" coveredconditionals="11" methods="9" coveredmethods="9"/>
+      <file name="stores.js" path="/Users/diego.valencia/Desktop/koibanx-backend-challenge/routes/stores.js">
+        <metrics statements="45" coveredstatements="43" conditionals="12" coveredconditionals="11" methods="9" coveredmethods="9"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="32" count="150" type="stmt"/>
+        <line num="33" count="120" type="stmt"/>
+        <line num="34" count="27" type="stmt"/>
+        <line num="35" count="27" type="stmt"/>
+        <line num="36" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="27" type="stmt"/>
+        <line num="45" count="3" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="70" count="2" type="stmt"/>
+        <line num="71" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="87" count="2" type="stmt"/>
+        <line num="88" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="89" count="1" type="stmt"/>
+        <line num="120" count="2" type="stmt"/>
+        <line num="123" count="2" type="stmt"/>
+        <line num="125" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="126" count="1" type="stmt"/>
+        <line num="129" count="1" type="stmt"/>
+        <line num="130" count="1" type="stmt"/>
+        <line num="132" count="1" type="stmt"/>
+        <line num="133" count="1" type="stmt"/>
+        <line num="134" count="1" type="stmt"/>
+        <line num="135" count="1" type="stmt"/>
+        <line num="136" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="137" count="1" type="stmt"/>
+        <line num="139" count="1" type="stmt"/>
+        <line num="141" count="1" type="stmt"/>
+        <line num="144" count="1" type="stmt"/>
+        <line num="146" count="0" type="stmt"/>
+        <line num="150" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="koibanx-backend-challenge.services">
+      <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="user.service.js" path="/Users/diego.valencia/Desktop/koibanx-backend-challenge/services/user.service.js">
+        <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="9" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="koibanx-backend-challenge.utils">
+      <metrics statements="16" coveredstatements="11" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="format-currency.js" path="/Users/diego.valencia/Desktop/koibanx-backend-challenge/utils/format-currency.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="initializer.js" path="/Users/diego.valencia/Desktop/koibanx-backend-challenge/utils/initializer.js">
+        <metrics statements="10" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+      <file name="logger.js" path="/Users/diego.valencia/Desktop/koibanx-backend-challenge/utils/logger.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
